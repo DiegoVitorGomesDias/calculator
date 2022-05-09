@@ -66,7 +66,6 @@ th, td
     border: 1px solid white;
     margin: 3px;
     padding: 15px;
-    cursor: pointer;
 }
 
 th:hover, td:hover
