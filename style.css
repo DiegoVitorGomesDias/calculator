@@ -49,7 +49,6 @@ header
     align-self: center;
     align-content: center;
     scroll-snap-align: end;    
-    cursor: text;    
 }
 
 table
