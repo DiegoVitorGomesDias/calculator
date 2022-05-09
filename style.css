@@ -1,4 +1,4 @@
-*
+*, *::after, *::before
 {
     padding: 0px;
     margin: 0px;    
@@ -12,7 +12,7 @@ body
 
 header
 {    
-    padding: 30px;
+    padding: 30px;    
     text-align: center;
     color: white;
     background-color: black;    
@@ -24,11 +24,12 @@ header
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);    
+    margin-top: 1vh;
     background-color: black;
     padding: 15px;
     padding-top: 0px;
-    border-radius: 15px;    
+    border-radius: 15px;     
 }
 
 #result
@@ -36,23 +37,19 @@ header
     color: black;
     text-align: right;    
     vertical-align: middle;
-    width: 35.4vh;    
+    width: 85%;    
     overflow-x: auto;    
     overflow-y: hidden;    
     min-height: 20px;
     max-height: 30px;
     background-color: aliceblue;
     padding: 15px;    
-    margin: 15px 0px;
-    margin-left: 2px;
-    align-items: center;
-    align-self: center;
-    align-content: center;
-    scroll-snap-align: end;    
+    margin: 15px 0px;    
 }
 
 table
 {    
+    width: max-content;    
     border-collapse: collapse;
 }
 
@@ -65,7 +62,7 @@ th, td
     height: 50px;
     border: 1px solid white;
     margin: 3px;
-    padding: 15px;
+    padding: 1%;
 }
 
 th:hover, td:hover
