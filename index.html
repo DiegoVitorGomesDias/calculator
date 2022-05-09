@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br" type="text/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../00. favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body onkeydown="keydown()">
+
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+
+    <main id="calc">
+        <section id="result">         
+            <!--Aqui vai aparecer o resultado da operação-->
+        </section>
+
+        <table>
+            <thead>
+                <tr>
+                    <th onclick="deleteall()">AC</th>
+                    <th onclick="insert('%')">%</th>
+                    <th onclick="deleteinback()">⇐</th>
+                    <th onclick="insert('/')">÷</th>
+                </tr>                
+            </thead>
+            <tbody>
+                <tr>
+                    <td onclick="insert('7')">7</td>
+                    <td onclick="insert('8')">8</td>
+                    <td onclick="insert('9')">9</td>
+                    <td onclick="insert('*')">x</td>
+                </tr>
+                <tr>
+                    <td onclick="insert('4')">4</td>
+                    <td onclick="insert('5')">5</td>
+                    <td onclick="insert('6')">6</td>
+                    <td onclick="insert('-')">-</td>
+                </tr>
+                <tr>
+                    <td onclick="insert('1')">1</td>
+                    <td onclick="insert('2')">2</td>
+                    <td onclick="insert('3')">3</td>
+                    <td onclick="insert('+')">+</td>
+                </tr>
+                <tr>
+                    <td onclick="invertcalc()">+/-</td>
+                    <td onclick="insert('0')">0</td>
+                    <td onclick="insert(',')">,</td>
+                    <td onclick="sumres()">=</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <script src="script.js" type="text/javascript"></script>
+    
+</body>
+</html>
