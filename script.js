@@ -85,6 +85,11 @@ function sumres()
 
 function correction(num)
 {
+    if (num == "%")
+    {
+        calc += "/100";
+    }    
+
     if (num == ",")
     {
         var rcaraccalc = calc.substring(calc.length, calc.length - 1);
@@ -148,14 +153,7 @@ function correction(num)
             }
             else
             {
-                if (num != "%")
-                {
-                    calc += num;
-                }
-                else
-                {
-                    calc += "/100";                    
-                }
+                calc += num;
             }
         }
     }
