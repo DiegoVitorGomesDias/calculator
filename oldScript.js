@@ -1,3 +1,5 @@
+// Script created in 2022/05
+
 var res = document.getElementById('result');
 var calc = "";
 var num = "";
@@ -21,7 +23,7 @@ function keydown()
 
     if (keyselection == "%")
     {
-        insert(keyselection)
+        insert("/100")
     }
 
     if (keyselection == "Enter")
@@ -183,4 +185,4 @@ function invertcalc()
     {
         invertboolean = false;
     }
-}
+}   

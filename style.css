@@ -1,72 +1,84 @@
-*
+@charset "utf-8";
+
+*, 
+*:after,
+*:before
 {
-    padding: 0px;
-    margin: 0px;    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
 }
 
 body
 {
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100vw;
+    min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 header
 {    
+    flex: 0 0 auto;
+    width: 100%;
     padding: 30px;
     text-align: center;
     color: white;
     background-color: black;    
 }
 
+main
+{
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 #calc
 {
+    width: 80vw;
+    max-width: 400px;
+    height: 100vh;
+    max-height: 500px;
     color: white;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
     background-color: black;
     padding: 15px;
-    padding-top: 0px;
-    border-radius: 15px;    
+    border-radius: 15px;
+
 }
 
 #result
 {
     color: black;
-    text-align: right;    
-    vertical-align: middle;
-    width: 35.4vh;    
-    overflow-x: auto;    
-    overflow-y: hidden;    
-    min-height: 15px;
-    max-height: 30px;
+    text-align: right;
     background-color: aliceblue;
-    padding: 15px;    
-    margin: 15px 0px;
-    margin-left: 2px;
-    align-items: center;
-    align-self: center;
-    align-content: center;
-    scroll-snap-align: end;    
-    cursor: text;    
+    padding: 15px;
+    margin: 0px 0px 20px 0px;
+    max-width: 100%;
+    word-wrap: normal;
+    word-break: break-all;
+    min-height: 50px;
 }
 
-table
-{    
-    border-collapse: collapse;
-}
+table { border-collapse: collapse; width: 100%; height: 85%; }
+
+thead { height: calc(100% / 5); }
 
 th, td
 {
     color: white;
     text-align: center;
     vertical-align: middle;
-    width: 50px;
-    height: 50px;
+    width: calc(100% / 4);
+    height: calc(100% / 5);
     border: 1px solid white;
-    margin: 3px;
-    padding: 15px;
     cursor: pointer;
 }
 
